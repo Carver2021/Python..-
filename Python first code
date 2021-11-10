@@ -1,0 +1,44 @@
+@lnezda
+
+#needs turtle access... 
+
+import turtle
+wn = turtle.Screen()
+speed = 7
+bob = turtle.Turtle()
+wn.bgcolor("pink")
+
+bob.color ("red")
+bob.width(5)
+
+bob.up() 
+bob.goto(0,20)
+bob.down()
+bob.left(90)
+ang = 45
+for _ in range(10):
+	bob.right(20)
+	bob.forward(20)
+	#ang = ang - 10
+ang = 10
+for _ in range(11):
+	bob.right(ang)
+	bob.forward(13)
+	ang = ang - 2
+  
+bob.up()
+bob.goto(0,20)
+
+bob.down()
+
+bob.right(150)
+ang = 45
+for _ in range(10):
+	bob.left(20)
+	bob.forward(20)
+  
+ang = 10
+for _ in range(12):
+	bob.left(ang)
+	bob.forward(13.7)
+	ang = ang - 2
